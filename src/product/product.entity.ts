@@ -5,18 +5,18 @@ export class ProductEntity {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @Column()
-    name:string;
+    @Column({name: 'products_name', nullable: false })
+    name: string;
 
-    @Column()
-    price:number;
+    @Column('decimal', {name: 'products_price', precision: 10, scale: 2, nullable: false })
+    price: number; 
 
-    @Column()
-    manufacturer:string;
+    @Column({name: 'products_manufacturer', nullable: false })
+    manufacturer: string;
 
-    @Column()
-    stock:boolean;
+    @Column({name: 'products_stock', default: true })
+    stock: boolean;
 
-    @Column()
-    image:string;
+    @Column({name: 'products_image', nullable: true }) 
+    image: string;
 }

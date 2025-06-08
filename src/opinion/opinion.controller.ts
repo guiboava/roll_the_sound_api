@@ -1,5 +1,5 @@
 import { Controller, Get } from "@nestjs/common";
-import { OpiniontEntity } from "./opinion.entity";
+import { OpinionEntity } from "./opinion.entity";
 import { OpinionService } from "./opinion.service";
 
 @Controller('opinions')
@@ -7,7 +7,7 @@ export class OpinionController {
     constructor(private opiniontService: OpinionService) {}
 
     @Get()
-    findAll(): Promise<OpiniontEntity[]> {
+    findAll(): Promise<OpinionEntity[]> {
         return this.opiniontService.findAll();
     }
 }

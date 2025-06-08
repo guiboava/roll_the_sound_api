@@ -1,15 +1,15 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import { OpiniontEntity } from "./opinion.entity";
+import { OpinionEntity } from "./opinion.entity";
 
 @Injectable()
 export class OpinionService {
     constructor(
-        @InjectRepository(OpiniontEntity)
-        private readonly opinionRepository: Repository<OpiniontEntity>, 
+        @InjectRepository(OpinionEntity)
+        private readonly opinionRepository: Repository<OpinionEntity>, 
     ){}
-    findAll(): Promise<OpiniontEntity[]>{
+    findAll(): Promise<OpinionEntity[]>{
         return this.opinionRepository.find();
     }
 }

@@ -6,22 +6,22 @@ export class OrderItemEntity {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @Column()
-    name:string;
+    @Column({ name: 'orderitems_name', type: 'varchar', nullable: false })
+    name: string;
 
-    @Column()
-    image:string;
+    @Column({name: 'orderitems_image', type: 'varchar', nullable: false })
+    image: string;
 
-    @Column()
-    price:number;
+    @Column({name: 'orderitems_price', type: 'decimal', precision: 10, scale: 2, nullable: false })
+    price: number;
 
-    @Column()
-    quantity:number;
+    @Column({name: 'orderitems_quantity', type: 'int', nullable: false })
+    quantity: number;
 
-    @JoinColumn({ name: 'orderId' }) // Vai me garantir que tenha um relacionamento com os pedidos e talvez facilitar na hora da logica do front-end.
-    @ManyToOne(() => OrderEntity, (order) => order.orderItems)
+    @ManyToOne(() => OrderEntity, (order) => order.orderItems, { onDelete: 'CASCADE' })
+    @JoinColumn({ name: 'orderitems_order_id' })
     order: OrderEntity;
 
-    @Column()
+    @Column({ name: 'orderitems_order_id' })
     readonly orderId: string;
 }

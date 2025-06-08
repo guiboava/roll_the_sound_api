@@ -1,0 +1,15 @@
+export enum CityEnum {
+  INDEFINIDO = 'Selecione',
+  FLORIANOPOLIS = 'Florianópolis',
+  JOINVILLE = 'Joinville',
+  BLUMENAU = 'Blumenau',
+  CHAPECO = 'Chapecó',
+  ITAJAI = 'Itajaí',
+  CRICIUMA = 'Criciúma',
+  LAGES = 'Lages',
+  BALNEARIO_CAMBORIU = 'Balneário Camboriú',
+  JARAGUA_DO_SUL = 'Jaraguá do Sul',
+  PALHOCA = 'Palhoça',
+  SAO_JOSE = 'São José',
+  BRUSQUE = 'Brusque',
+}

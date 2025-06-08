@@ -6,18 +6,18 @@ export class OrderEntity {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @Column()
-    clientName:string;
+    @Column({ name: 'orders_client_name', type: 'varchar', nullable: false })
+    clientName: string;
 
-    @Column()
-    clientCpf:string;
+    @Column({ name: 'orders_client_cpf', type: 'varchar', length: 11, nullable: false })
+    clientCpf: string;
 
-    @Column()
-    orderDate:Date;
+    @Column({ name: 'orders_date', type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+    orderDate: Date;
 
-    @Column()
-    status:string;
+    @Column({ name: 'orders_status', type: 'varchar', nullable: false })
+    status: string;
 
-    @OneToMany(() => OrderItemEntity, (orderItem) => orderItem.order)
+    @OneToMany(() => OrderItemEntity, (orderItem) => orderItem.order, { cascade: true })
     orderItems: OrderItemEntity[];
 }
