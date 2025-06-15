@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from "@nestjs/common";
+import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
 import { OpinionEntity } from "./opinion.entity";
@@ -26,11 +26,33 @@ export class OpinionService {
         return { ...findById, id };
     }
     async create(dto: OpinionDto) {
-        const newOpinion = this.opinionRepository.create(dto);
-        return this.opinionRepository.save(newOpinion);
+        await this.validateBusinessRules(dto); 
+        const opinion = this.opinionRepository.create(dto);
+        return this.opinionRepository.save(opinion);
     }
-    async update({id, ...dto}: OpinionDto) {
-        await this.findById(id);
-        return this.opinionRepository.save({id, ...dto});
+    async update(id: string, dto: OpinionDto) {
+        const opinion = await this.findById(id);
+        await this.validateBusinessRules(dto, id);
+        Object.assign(opinion, dto); 
+        return this.opinionRepository.save(opinion);
     }
+    private async validateBusinessRules(opinionDto: OpinionDto, idToIgnore?: string) {
+    // Nome da pessoa não pode se repetir na mesma cidade
+    const existing = await this.opinionRepository.findOne({
+        where: { name: opinionDto.name, city: opinionDto.city },
+    });
+    if (existing && existing.id !== idToIgnore) {
+        throw new BadRequestException('Já existe uma opinião registrada com esse nome nessa cidade');
+    }
+
+    // Nota deve ser entre 1 e 5
+    if (opinionDto.note < 1 || opinionDto.note > 5) {
+        throw new BadRequestException('A nota deve ser entre 1 e 5');
+    }
+
+    // Se "recommend" for verdadeiro, comentário deve ter pelo menos 10 caracteres
+    if (opinionDto.recommend && (!opinionDto.comment || opinionDto.comment.length < 10)) {
+        throw new BadRequestException('Comentários recomendando o produto devem ter ao menos 10 caracteres');
+    }
+}
 }
