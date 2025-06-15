@@ -25,6 +25,6 @@ export class OrderController {
     }
     @Put(':id')
     update(@Param('id') id: string, @Body() dto: OrderDto){
-        return this.orderService.update({...dto,id});
+        return this.orderService.update(id,dto);
     }
 }

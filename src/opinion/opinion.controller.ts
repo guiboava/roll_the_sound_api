@@ -25,6 +25,6 @@ export class OpinionController {
     }
     @Put(':id')
     update(@Param('id') id: string, @Body() dto: OpinionDto){
-        return this.opiniontService.update({...dto,id});
+        return this.opiniontService.update(id,dto);
     }
 }

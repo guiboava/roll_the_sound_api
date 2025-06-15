@@ -25,6 +25,6 @@ export class ArtistController {
     }
     @Put(':id')
     update(@Param('id') id: string, @Body() dto: ArtistDto){
-        return this.artistService.update({...dto,id});
+        return this.artistService.update(id,dto);
     }
 }
