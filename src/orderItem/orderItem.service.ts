@@ -32,12 +32,20 @@ export class OrderItemService {
     }
 
     async update(id: string, dto: OrderItemDto) {
-        const existingItem = await this.findById(id);
-        await this.validateBusinessRules(dto, id);
-        const updatedItem = { ...existingItem, ...dto, id };
-        return this.orderItemRepository.save(updatedItem);
+    const existingItem = await this.findById(id);
+
+    await this.validateBusinessRules({ ...existingItem, ...dto });
+
+    const updatedItem = {
+        ...existingItem,
+        ...dto,
+        orderId: dto.orderId ?? existingItem.orderId, // preserva se não vier novo
+        id,
+    };
+
+    return this.orderItemRepository.save(updatedItem);
     }
-    
+
     private async validateBusinessRules(dto: OrderItemDto, idToIgnore?: string) {
         // Produto não pode ter quantidade zero ou negativa
         if (dto.quantity <= 0) {

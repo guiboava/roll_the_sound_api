@@ -1,0 +1,1228 @@
+{
+	"info": {
+		"_postman_id": "c8a81df8-65a0-482e-becb-08c22ab71e68",
+		"name": "roll_the_sound_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35281646"
+	},
+	"item": [
+		{
+			"name": "Artistas",
+			"item": [
+				{
+					"name": "Artists_Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Geddy Lee\",\r\n  \"image\": \"https://pt.quizur.com/_image?href=https%3A%2F%2Fstatic.quizur.com%2Fi%2Fb%2F5979b951507929.43183828Rush.jpg&w=600&h=600&f=webp\",\r\n  \"band\": \"Rush\",\r\n  \"srcClip\": \"https://www.youtube.com/embed/Hf-g21-arYk\",\r\n  \"about\": \"Cantor e compositor de rock alternativo.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/artists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Artists_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Geddy Lee\",\r\n  \"image\": \"https://pt.quizur.com/_image?href=https%3A%2F%2Fstatic.quizur.com%2Fi%2Fb%2F5979b951507929.43183828Rush.jpg&w=600&h=600&f=webp\",\r\n  \"band\": \"Rush\",\r\n  \"srcClip\": \"https://www.youtube.com/embed/Hf-g21-arYk\",\r\n  \"about\": \"Cantor e compositor de rock alternativo.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/artists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"artists"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Artists_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Geddy Lee\",\r\n  \"image\": \"https://pt.quizur.com/_image?href=https%3A%2F%2Fstatic.quizur.com%2Fi%2Fb%2F5979b951507929.43183828Rush.jpg&w=600&h=600&f=webp\",\r\n  \"band\": \"Rush\",\r\n  \"srcClip\": \"https://www.youtube.com/embed/Hf-g21-arYk\",\r\n  \"about\": \"Cantor e compositor de rock alternativo.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/artists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"artists"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Artists_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Geddy Lee\",\r\n  \"image\": \"https://pt.quizur.com/_image?href=https%3A%2F%2Fstatic.quizur.com%2Fi%2Fb%2F5979b951507929.43183828Rush.jpg&w=600&h=600&f=webp\",\r\n  \"band\": \"Rush\",\r\n  \"srcClip\": \"https://www.youtube.com/embed/Hf-g21-arYk\",\r\n  \"about\": \"Cantor e compositor de rock alternativo.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/artists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"artists"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Banda com menos de 3 Char",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Amy Lee\",\r\n  \"image\": \"https://pt.quizur.com/_image?href=https%3A%2F%2Fstatic.quizur.com%2Fi%2Fb%2F5979b951507929.43183828Rush.jpg&w=600&h=600&f=webp\",\r\n  \"band\": \"U2\",\r\n  \"srcClip\": \"https://www.youtube.com/embed/Hf-g21-arYk\",\r\n  \"about\": \"Cantor e compositor de rock alternativo.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/artists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "srcClip deve começar com \"https://\"",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Rita Lee\",\r\n  \"image\": \"https://pt.quizur.com/_image?href=https%3A%2F%2Fstatic.quizur.com%2Fi%2Fb%2F5979b951507929.43183828Rush.jpg&w=600&h=600&f=webp\",\r\n  \"band\": \"Rush\",\r\n  \"srcClip\": \"teste://www.youtube.com/embed/Hf-g21-arYk\",\r\n  \"about\": \"Cantor e compositor de rock alternativo.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/artists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nome de artista Repetido",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Geddy Lee\",\r\n  \"image\": \"https://pt.quizur.com/_image?href=https%3A%2F%2Fstatic.quizur.com%2Fi%2Fb%2F5979b951507929.43183828Rush.jpg&w=600&h=600&f=webp\",\r\n  \"band\": \"Rush\",\r\n  \"srcClip\": \"https://www.youtube.com/embed/Hf-g21-arYk\",\r\n  \"about\": \"Cantor e compositor de rock alternativo.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/artists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Artists_Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/artists/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"artists",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Artists_Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"Guilherme da Silva Boava\",\r\n        \"image\": \"https://pt.quizur.com/_image?href=https%3A%2F%2Fstatic.quizur.com%2Fi%2Fb%2F5979b951507929.43183828Rush.jpg&w=600&h=600&f=webp\",\r\n        \"band\": \"Rush\",\r\n        \"srcClip\": \"https://www.youtube.com/embed/Hf-g21-arYk\",\r\n        \"about\": \"Cantor e compositor de rock alternativo.\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/artists/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"artists",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Artists_Del",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/artists/8f6f8587-7697-495d-b096-d66d84a34f75",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"artists",
+								"8f6f8587-7697-495d-b096-d66d84a34f75"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Opiniões",
+			"item": [
+				{
+					"name": "Opinion_Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Maria Silva\",\r\n  \"note\": 5,\r\n  \"comment\": \"Produto excelente, super recomendo!\",\r\n  \"recommend\": true,\r\n  \"city\": \"Criciúma\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/opinions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"opinions"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Opinion_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Maria Silva\",\r\n  \"note\": 5,\r\n  \"comment\": \"Produto excelente, super recomendo!\",\r\n  \"recommend\": true,\r\n  \"city\": \"Criciúma\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/opinions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"opinions"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Opinion_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Maria Silva Boava\",\r\n  \"note\": 6,\r\n  \"comment\": \"Produto excelente, super recomendo!\",\r\n  \"recommend\": true,\r\n  \"city\": \"Criciúma\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/opinions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"opinions"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"body": ""
+						},
+						{
+							"name": "Opinion_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Maria Tereza\",\r\n  \"note\": 5,\r\n  \"comment\": \"Pr\",\r\n  \"recommend\": true,\r\n  \"city\": \"Criciúma\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/opinions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"opinions"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Nome da pessoa não pode se repetir na mesma cidade",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Maria Silva\",\r\n  \"note\": 5,\r\n  \"comment\": \"Produto excelente, super recomendo!\",\r\n  \"recommend\": true,\r\n  \"city\": \"Criciúma\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/opinions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"opinions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Se \"recommend\" for verdadeiro, comentário deve ter pelo menos 10 caracteres",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Maria Tereza\",\r\n  \"note\": 5,\r\n  \"comment\": \"Pr\",\r\n  \"recommend\": true,\r\n  \"city\": \"Criciúma\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/opinions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"opinions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nota deve ser entre 1 e 5",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Maria Silva Boava\",\r\n  \"note\": 6,\r\n  \"comment\": \"Produto excelente, super recomendo!\",\r\n  \"recommend\": true,\r\n  \"city\": \"Criciúma\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/opinions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"opinions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opinion_Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/opinions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"opinions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opinion_Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": \"c6da86ef-f133-42ab-83db-41ffc6e68ded\",\r\n        \"name\": \"Cleusa\",\r\n        \"note\": 1,\r\n        \"comment\": \"Produto excelente, super recomendo!\",\r\n        \"recommend\": true,\r\n        \"city\": \"Criciúma\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/opinions/c6da86ef-f133-42ab-83db-41ffc6e68ded",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"opinions",
+								"c6da86ef-f133-42ab-83db-41ffc6e68ded"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opinion_Del",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/opinions/f315ccf2-184a-43a4-b908-a576ef49a30d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"opinions",
+								"f315ccf2-184a-43a4-b908-a576ef49a30d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "Products_Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Violão Acústico\",\r\n  \"price\": 749.90,\r\n  \"manufacturer\": \"Tagima\",\r\n  \"stock\": true,\r\n  \"description\": \"Violão de 6 cordas com acabamento fosco.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Products_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Violão Acústico\",\r\n  \"price\": 749.90,\r\n  \"manufacturer\": \"Tagima\",\r\n  \"stock\": true,\r\n  \"description\": \"Violão de 6 cordas com acabamento fosco.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Products_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Violão eletrico\",\r\n  \"price\": -749.90,\r\n  \"manufacturer\": \"Tagima\",\r\n  \"stock\": true,\r\n  \"description\": \"Violão de 6 cordas com acabamento fosco.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"body": ""
+						},
+						{
+							"name": "Products_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Violão eletrico\",\r\n  \"price\": 749.90,\r\n  \"manufacturer\": \"Tagima\",\r\n  \"stock\": true,\r\n  \"description\": \"Violão de 6 cordas com acabamento fosco.\",\r\n  \"image\": \"teste test teste\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Preço deve ser maior que zero",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Violão eletrico\",\r\n  \"price\": -749.90,\r\n  \"manufacturer\": \"Tagima\",\r\n  \"stock\": true,\r\n  \"description\": \"Violão de 6 cordas com acabamento fosco.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "image deve obrigatoriamente começar com \"https://\"",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Violão eletrico\",\r\n  \"price\": 749.90,\r\n  \"manufacturer\": \"Tagima\",\r\n  \"stock\": true,\r\n  \"description\": \"Violão de 6 cordas com acabamento fosco.\",\r\n  \"image\": \"teste test teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nome do produto deve ser único",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Violão Acústico\",\r\n  \"price\": 749.90,\r\n  \"manufacturer\": \"Tagima\",\r\n  \"stock\": true,\r\n  \"description\": \"Violão de 6 cordas com acabamento fosco.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products_Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Baixolão acustico\",\r\n  \"price\": 10000.90,\r\n  \"manufacturer\": \"Yamaha\",\r\n  \"stock\": true,\r\n  \"description\": \"Violão de 6 cordas com acabamento fosco.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/47fcc210-b8dd-4409-917d-c3d8821adb4f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"47fcc210-b8dd-4409-917d-c3d8821adb4f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/47fcc210-b8dd-4409-917d-c3d8821adb4f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"47fcc210-b8dd-4409-917d-c3d8821adb4f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "Orders_Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientName\": \"João da Silva\",\r\n  \"clientCpf\": \"12345678901\",\r\n  \"status\": \"pendente\",\r\n  \"orderItems\": [\r\n    {\r\n      \"name\": \"Violão Yamaha\",\r\n      \"image\": \"https://exemplo1.com/violao.jpg\",\r\n      \"price\": 1200.50,\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"name\": \"Cabo P10\",\r\n      \"image\": \"https://exemplo2.com/cabo.jpg\",\r\n      \"price\": 35.99,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Orders_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"clientName\": \"João da Silva\",\r\n  \"clientCpf\": \"12345678901\",\r\n  \"status\": \"pendente\",\r\n  \"orderItems\": [\r\n    {\r\n      \"name\": \"Violão Yamaha\",\r\n      \"image\": \"https://exemplo1.com/violao.jpg\",\r\n      \"price\": 1200.50,\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"name\": \"Cabo P10\",\r\n      \"image\": \"https://exemplo2.com/cabo.jpg\",\r\n      \"price\": 35.99,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Orders_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"clientName\": \"João da Silva\",\r\n  \"clientCpf\": \"12345678901\",\r\n  \"status\": \"pendente\",\r\n  \"orderItems\": [\r\n    {\r\n      \"name\": \"Violão Yamaha\",\r\n      \"image\": \"https://exemplo1.com/violao.jpg\",\r\n      \"price\": 1200.50,\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"name\": \"Cabo P10\",\r\n      \"image\": \"https://exemplo2.com/cabo.jpg\",\r\n      \"price\": 35.99,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Orders_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"clientName\": \"João da Silva\",\r\n  \"clientCpf\": \"12345678901\",\r\n  \"status\": \"pendente\",\r\n  \"orderItems\": [\r\n    {\r\n      \"name\": \"Violão Yamaha\",\r\n      \"image\": \"https://exemplo1.com/violao.jpg\",\r\n      \"price\": 1200.50,\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"name\": \"Cabo P10\",\r\n      \"image\": \"https://exemplo2.com/cabo.jpg\",\r\n      \"price\": 35.99,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Verifica se já existe um pedido com o mesmo CPF e data",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientName\": \"João da Silva\",\r\n  \"clientCpf\": \"12345678901\",\r\n  \"status\": \"pendente\",\r\n  \"orderDate\": \"2025-06-16\",\r\n  \"orderItems\": [\r\n    {\r\n      \"name\": \"Violão Yamaha\",\r\n      \"image\": \"https://exemplo1.com/violao.jpg\",\r\n      \"price\": 1200.50,\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"name\": \"Violão Yamaha\",\r\n      \"image\": \"https://exemplo2.com/cabo.jpg\",\r\n      \"price\": 35.99,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Valida status permitido",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientName\": \"João da Silva\",\r\n  \"clientCpf\": \"12345178901\",\r\n  \"status\": \"teste\",\r\n  \"orderItems\": [\r\n    {\r\n      \"name\": \"Violão Yamaha\",\r\n      \"image\": \"https://exemplo1.com/violao.jpg\",\r\n      \"price\": 1200.50,\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"name\": \"Cabo P10\",\r\n      \"image\": \"https://exemplo2.com/cabo.jpg\",\r\n      \"price\": 35.99,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Valida se a data não é futura",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientName\": \"João da Silva\",\r\n  \"clientCpf\": \"12345678901\",\r\n  \"status\": \"pendente\",\r\n  \"orderDate\": \"2025-10-10\",\r\n  \"orderItems\": [\r\n    {\r\n      \"name\": \"Violão Yamaha\",\r\n      \"image\": \"https://exemplo1.com/violao.jpg\",\r\n      \"price\": 1200.50,\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"name\": \"Violão Yamaha\",\r\n      \"image\": \"https://exemplo2.com/cabo.jpg\",\r\n      \"price\": 35.99,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Orders_Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientName\": \"MAURA\",\r\n  \"clientCpf\": \"12345678901\",\r\n  \"status\": \"pendente\",\r\n  \"orderItems\": [\r\n    {\r\n        \"id\": \"e04b5f06-125c-4839-9907-e80f239c5fd1\",\r\n        \"name\": \"Violão Yamaha\",\r\n        \"image\": \"https://exemplo1.com/violao.jpg\",\r\n        \"price\": 1200.50,\r\n        \"quantity\": 1,\r\n        \"orderId\": \"b64c5df5-f213-4318-a76f-f9dfbbe3c8a6\"\r\n    },\r\n    {\r\n        \"id\": \"6d517f7f-7db4-435e-adf7-fb11c03624e6\",\r\n        \"name\": \"Cabo P10\",\r\n        \"image\": \"https://exemplo2.com/cabo.jpg\",\r\n        \"price\": 35.99,\r\n        \"quantity\": 2,\r\n        \"orderId\": \"b64c5df5-f213-4318-a76f-f9dfbbe3c8a6\"\r\n    },\r\n    {\r\n        \"name\": \"Cabo P10 teste outro item\",\r\n        \"image\": \"https://exemplo2.com/cabo.jpg\",\r\n        \"price\": 35.99,\r\n        \"quantity\": 2,\r\n        \"orderId\": \"b64c5df5-f213-4318-a76f-f9dfbbe3c8a6\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orders/b64c5df5-f213-4318-a76f-f9dfbbe3c8a6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"b64c5df5-f213-4318-a76f-f9dfbbe3c8a6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/b64c5df5-f213-4318-a76f-f9dfbbe3c8a6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"b64c5df5-f213-4318-a76f-f9dfbbe3c8a6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Items de Pedido",
+			"item": [
+				{
+					"name": "Get Dos items de pedido - extra",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orderItems",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orderItems"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

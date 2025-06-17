@@ -50,7 +50,7 @@ export class ProductService {
             throw new BadRequestException('O preço do produto deve ser maior que zero');
         }
 
-        // srcClip deve obrigatoriamente começar com "https://"
+        // image deve obrigatoriamente começar com "https://"
         if (!productDto.image?.startsWith('https://') && productDto.image )   {
             throw new BadRequestException('O link da imagem deve começar com "https://"');
         }

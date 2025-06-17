@@ -20,7 +20,6 @@ export class ArtistDto {
 
     @IsString({message: 'O Clip do artista deve ser uma string.' })
     @IsNotEmpty({message: 'O Clip do artista não pode ser vazio.'})
-    @IsUrl({}, { message: 'O link do clip deve ser uma URL válida.' })
     srcClip: string;
 
     @IsOptional()

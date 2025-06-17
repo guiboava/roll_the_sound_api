@@ -11,8 +11,6 @@ export class OpinionDto {
   name: string;
 
   @IsInt({ message: 'A nota deve ser um número inteiro.' })
-  @Min(1, { message: 'A nota mínima permitida é 1.' })
-  @Max(5, { message: 'A nota máxima permitida é 5.' })
   note: number;
 
   @IsOptional()

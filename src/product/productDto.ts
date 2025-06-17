@@ -12,7 +12,6 @@ export class ProductDto {
     name: string;
 
     @IsNumber({}, { message: 'O preço deve ser um número válido.' })
-    @IsPositive({ message: 'O preço deve ser maior que zero.' })
     price: number;
 
     @IsString({ message: 'O fabricante deve ser um texto.' })
@@ -23,6 +22,5 @@ export class ProductDto {
     stock: boolean;
 
     @IsOptional()
-    @IsUrl({}, { message: 'A imagem deve ser uma URL válida.' })
     image?: string;
 }

@@ -19,9 +19,6 @@ export class OrderDto {
   @IsDateString({}, { message: 'A data do pedido deve estar em formato ISO (AAAA-MM-DD).' })
   orderDate?: Date;
 
-  @IsIn(['pago','pendente','cancelado'], {
-    message: 'Status inválido. Valores permitidos: pago ,pendente, cancelado.',
-  })
   status: string;
 
   @IsArray({ message: 'Os itens do pedido devem estar em uma lista.' })

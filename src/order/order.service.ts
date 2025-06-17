@@ -56,7 +56,7 @@ export class OrderService {
             throw new BadRequestException('A data do pedido não pode ser no futuro.');
         }
 
-        // Valida status permitido (extra segurança além do @IsIn)
+        // Valida status permitido
         const validStatuses = ['pago', 'pendente', 'cancelado'];
         if (!validStatuses.includes(dto.status.toLowerCase())) {
             throw new BadRequestException(

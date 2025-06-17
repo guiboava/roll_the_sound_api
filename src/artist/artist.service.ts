@@ -31,11 +31,13 @@ export class ArtistService {
         const newArtist = this.artistRepository.create(dto);
         return this.artistRepository.save(newArtist);
     }
-    async update(id:string,dto: ArtistDto) {
-        const artist = await this.findById(id); 
-        await this.validateBusinessRules(dto, id); 
+    async update(id: string, dto: ArtistDto) {
+        const artist = await this.findById(id);
+        await this.validateBusinessRules(dto, id);
+        Object.assign(artist, dto);
         return this.artistRepository.save(artist);
     }
+
     private async validateBusinessRules(artistDto: ArtistDto, idToIgnore?: string) {
     // Nome do artista não pode se repetir
     const existing = await this.artistRepository.findOne({

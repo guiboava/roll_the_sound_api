@@ -23,6 +23,7 @@ export class OrderItemDto {
     quantity: number;
 
     @IsUUID(4, { message: 'O campo "orderId" deve conter um UUID válido.' })
-    @IsNotEmpty({ message: 'O campo "orderId" é obrigatório.' })
-    orderId: string;
+    @IsOptional()
+    orderId?: string;
+
 }
